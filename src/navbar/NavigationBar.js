@@ -36,21 +36,21 @@ const Navigationbar = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto me-auto">
-            <Nav.Link to='/upcoming' className="ml-10 nav-btn">UPCOMING</Nav.Link>
-            <Nav.Link to='/featured' className="ml-10 nav-btn">FEATURED</Nav.Link>
-            <Nav.Link to='/brawl' className="ml-10 nav-btn">BRAWL</Nav.Link>
+            <Link to='/upcoming' className="ml-10 nav-btn">UPCOMING</Link>
+            <Link to='/featured' className="ml-10 nav-btn">FEATURED</Link>
+            <Link to='/brawl' className="ml-10 nav-btn">BRAWL</Link>
             
           </Nav>
           <Nav>
-          <Nav.Link className="">
+          <Link to='' className="">
               <div className='flex align-items-center'>
                 <Image src={Logo} className='h-10' />
                 <h3 className='text-white '>{Math.floor(balance)}</h3>
               </div>
-            </Nav.Link>
-            <Nav.Link eventKey={2} to="#memes">
+            </Link>
+            <Link eventKey={2} to="#memes">
               <WalletMultiButton className="wallet-btn"/>
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
