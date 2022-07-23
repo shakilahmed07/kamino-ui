@@ -28,39 +28,29 @@ const Navigationbar = (props) => {
   // }
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-black">
+    <Navbar collapseOnSelect expand="lg" bg='dark' variant="dark" className="bg-black">
       <Container>
         <Navbar.Brand style={{ color: "#fff" }}>
           <Link to='/'><Image src={Brand} className="w-24 md:w-40" /></Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto"></Nav>
-          <Link to='/upcoming' className="nav-btn">UPCOMING</Link>
-          <Nav className="me-auto"></Nav>
-          <Link to='/featured' className="nav-btn">FEATURED</Link>
-          <Nav className="me-auto"></Nav>
-          <Link to='/brawl' className="nav-btn">BRAWL</Link>
-          <Nav className="me-auto"></Nav>
-          <div className='flex justify-end'>
-            <Image src={Logo} className='h-10' />
-            <h3 className='flex justify-end text-white items-center m-0'>{Math.floor(balance)}</h3>
-          </div>
-          {/* <Nav>
-            <DropdownButton
-              variant={props.variant.toLowerCase()}
-              id="dropdown-basic-button"
-              title={props.title}
-              onSelect={(evt) => onChange(evt)}
-            >
-              <Dropdown.Item eventKey="devnet">Devnet</Dropdown.Item>
-              <Dropdown.Item eventKey="mainnet">Mainnet</Dropdown.Item>
-              <Dropdown.Item eventKey="testnet">Testnet</Dropdown.Item>
-            </DropdownButton>
-          </Nav> */}
+          <Nav className="ml-auto me-auto">
+            <Nav.Link to='/upcoming' className="ml-10 nav-btn">UPCOMING</Nav.Link>
+            <Nav.Link to='/featured' className="ml-10 nav-btn">FEATURED</Nav.Link>
+            <Nav.Link to='/brawl' className="ml-10 nav-btn">BRAWL</Nav.Link>
+            
+          </Nav>
           <Nav>
-            <Nav.Link></Nav.Link>
-            <WalletMultiButton className="wallet-btn"/>
+          <Nav.Link className="">
+              <div className='flex align-items-center'>
+                <Image src={Logo} className='h-10' />
+                <h3 className='text-white '>{Math.floor(balance)}</h3>
+              </div>
+            </Nav.Link>
+            <Nav.Link eventKey={2} to="#memes">
+              <WalletMultiButton className="wallet-btn"/>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
