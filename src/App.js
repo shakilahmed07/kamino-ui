@@ -9,49 +9,57 @@ function App(props) {
         <h1 className="text-white">Total $Shadow</h1>
         <Row className="mb-[40px]">
           <Col className="d-flex border-2 rounded-xl border-black p-4 bg-[#212121] h-full">
-            <Col className="col-2 text-center">
-              <Col className="rounded-lg bg-[#000000]">
-                <h1 className="text-light">2,863 K</h1>
-              </Col>
-              <p className="font-family">
-                Total $Shadow <br /> Minted
-              </p>
+            <Col className="col-2 ml-10 d-flex text-center">
+              <div>
+                <Col className="rounded-lg bg-[#000000]">
+                  <h1 className="text-light px-2">2,863 K</h1>
+                </Col>
+                <p className="font-family">
+                  Total $Shadow <br /> Minted
+                </p>
+              </div>
+              <h1 className="text-light px-3">=</h1>
             </Col>
-            <h1 className="text-light px-3">=</h1>
-            <Col className="col-2 text-center">
-              <Col className="rounded-lg bg-[#000000]">
-                <h1 className="text-light">1,833 K</h1>
-              </Col>
-              <p className="font-family">
-                Total $Shadow <br /> Staked
-              </p>
+            <Col className="col-2 d-flex text-center">
+              <div>
+                <Col className="rounded-lg bg-[#000000]">
+                  <h1 className="text-light px-2">1,833 K</h1>
+                </Col>
+                <p className="font-family">
+                Total $Shadow<br /> Staked
+                </p>
+              </div>
+              <h1 className="text-light px-3">=</h1>
             </Col>
-            <h1 className="text-light px-3">+</h1>
-            <Col className="col-2 text-center">
-              <Col className="rounded-lg bg-[#000000]">
-                <h1 className="text-light">745 K</h1>
-              </Col>
-              <p className="font-family">
-                Total $Shadow <br /> burned
-              </p>
+            <Col className="col-2 d-flex text-center">
+              <div>
+                <Col className="rounded-lg bg-[#000000]">
+                  <h1 className="text-light px-2">745 K</h1>
+                </Col>
+                <p className="font-family">
+                  Total $Shadow <br /> burned
+                </p>
+              </div>
+              <h1 className="text-light px-3">=</h1>
             </Col>
-            <h1 className="text-light px-3">+</h1>
-            <Col className="col-2 text-center">
-              <Col className="rounded-lg bg-[#000000]">
-                <h1 className="text-light">285 K</h1>
-              </Col>
-              <p className="font-family">
-                Total $Shadow <br /> circuloting
-              </p>
+            <Col className="col-2 d-flex text-center">
+              <div>
+                <Col className="rounded-lg bg-[#000000]">
+                  <h1 className="text-light px-2">285 K</h1>
+                </Col>
+                <p className="font-family">
+                  Total $Shadow <br /> circuloting
+                </p>
+              </div>
             </Col>
-            <Col className="col ml-10">
-              <Image src={line} className="h-[100%] w-[2px]" />
-            </Col>
-            <Col className="col-2 text-center">
-              <Col className="rounded-lg bg-[#000000]">
-                <h1 className="text-light">42,234</h1>
-              </Col>
-              <p className="font-family">Total players</p>
+            <Col className="col-2 d-flex justify-content-between text-center">
+              <Image src={line} className="h-[100%] w-[2px] ml-5" />
+              <div>
+                <Col className="rounded-lg bg-[#000000]">
+                <h1 className="text-light px-2">42,234</h1>
+                </Col>
+                  <p className="font-family">Total players</p>
+              </div>
             </Col>
           </Col>
         </Row>

@@ -42,13 +42,13 @@ const Navigationbar = (props) => {
             
           </Nav>
           <Nav>
-          <Link to='' className="">
-              <div className='flex align-items-center'>
-                <Image src={Logo} className='h-10' />
-                <h3 className='text-white '>{Math.floor(balance)}</h3>
+          <Link to='' className="nav-btn"style={{marginTop:"14px",marginLeft:'31px'}}>
+              <div className='flex'>
+                <Image src={Logo} className='h-10 mt-1' />
+                <h3 className='text-white mt-1 ml-1' >{Math.floor(balance)}</h3>
               </div>
             </Link>
-            <Link eventKey={2} to="#memes">
+            <Link eventKey={2} to="#memes" style={{marginTop:"10px",marginLeft:'16px'}}>
               <WalletMultiButton className="wallet-btn"/>
             </Link>
           </Nav>
