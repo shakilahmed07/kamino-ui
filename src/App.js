@@ -244,7 +244,7 @@ function App(props) {
         <Row>
           <Col className="d-flex flex-column col-12 mb-[150px]">
             <h1 className="text-white">LEADERBOARD</h1>
-            <Col className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 h-full col-12">
+            <Col className="bg-[#212121] text-center  border-2 rounded-xl border-black p-4 col-12">
               <div className="mb-[200px]">
                 <h1 className="text-white">BOARD</h1>
                 <div className="flex flex-col">
